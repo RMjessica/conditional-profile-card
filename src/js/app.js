@@ -33,9 +33,8 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>${variables.name}</h1>
-          <h2>${variables.lastname}</h2>
-          <h3>${variables.role}</h3>
+          <h1>${variables.name} ${variables.lastname}</h1>
+          <h2>${variables.role}</h2>
           <h3>${variables.city}, ${variables.country}</h3>
           <ul class="${variables.socialMediaPosition}">
             <li><a href="${variables.twiter}"><i class="fab fa-twitter"></i></a></li>
@@ -62,8 +61,8 @@ window.onload = function() {
     socialMediaPosition: "position-left",
     // social media usernames
     twitter: null,
-    github: "alesanchezr",
-    linkedin: null,
+    github: "https://github.com/RMjessica",
+    linkedin: "https://www.linkedin.com/in/rmjessica/",
     instagram: null,
     name: null,
     lastname: null,
